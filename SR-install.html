@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>the body is a score, send+receive v.26, 2024</title>
+
+  <body>
+    <!-- The wrapper and content divs set margins and positioning -->
+
+    <style>
+      body {
+        background-color: white;
+        font-family: courier new, monospace;
+
+        .caption {
+          color: green;
+          font-size: 0.75em;
+        }
+      }
+      .video-container {
+        padding: 5px;
+        text-align: center;
+      }
+      .header {
+        padding: 5px;
+        text-align: right;
+        background: black;
+        color: white;
+        font-size: 15px;
+      }
+      a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+       {
+        box-sizing: border-box;
+      }
+
+      .video-container {
+        padding: 5px;
+        text-align: center;
+      }
+
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+        text-align: center;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: 500;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+        margin: auto;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 10%;
+      }
+
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+      .alignleft {
+        float: left;
+      }
+      .alignright {
+        float: right;
+      }
+    </style>
+
+    <div id="textbox">
+      <p
+        class="alignleft"
+        style="color: white; padding-left: 8px; padding-top: 3px"
+      >
+        <a href="index.html">Z.LeBrun</a>
+      </p>
+      <p class="alignright"></p>
+      <div class="header">
+        <p style="padding-right: 8px">
+          <a href="bio.html">Bio</a> /
+          <a
+            href="https://docs.google.com/document/d/1Z6XeCaOc0wKJE3A7naDJdAA8dO4yfyhTGK4ftD4sHW0/edit?usp=sharing"
+            >CV</a
+          >
+          / <a href="portfolio.html">Portfolio</a> /
+          <a href="archive.html"> Archive</a> /
+          <a href="contact-info.html"> Contact</a>
+        </p>
+      </div>
+      <br />
+      <br />
+      <h style="margin-left: 20px; padding: 8px; font-size: 30px"
+        ><b><i>the body is a score</i>, 2024 </b></h
+      >
+      <br />
+      <br />
+
+      <!-- Container for the image gallery -->
+      <div class="container">
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 10</div>
+          <img
+            src="assets/PB081754r%20PanoramaA.jpg?v=1733865958307"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 10</div>
+          <img
+            src="assets/PB081804_1%20PanoramaA.jpg?v=1733861758376"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 10</div>
+          <img
+            src="assets/PA301731%20PanoramaA.jpg?v=1733861729875"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 10</div>
+          <img
+            src="assets/PA110184%20PanoramaA.jpg?v=1733861589877"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 10</div>
+          <img
+            src="assets/PB081803ra.jpg?v=1733861748288"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 10</div>
+          <img
+            src="assets/SDIM0106r%20PanoramaA.jpg?v=1733861795423"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 10</div>
+          <img
+            src="assets/PA301699%20PanoramaA.jpg?v=1733861711771"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 10</div>
+          <img
+            src="assets/PB081818ra.jpg?v=1733861771837"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 10</div>
+          <img
+            src="assets/SDIM0121r%20PanoramaA.jpg?v=1733861809709"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 / 10</div>
+          <img
+            src="assets/PB081817ra.jpg?v=1733861763390"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="assets/PB081754r%20PanoramaA.jpg?v=1733865958307"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="<i>The body is a score</i> (2024) by Z. LeBrun. Exhibition documentation by Robert Szkolnicki."
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="assets/PB081804_1%20PanoramaA.jpg?v=1733861758376"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="<i>The body is a score</i> (2024) by Z. LeBrun, installation view. Exhibition documentation by Robert Szkolnicki."
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="assets/PA301731%20PanoramaA.jpg?v=1733861729875"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="<i>The body is a score</i> (2024) by Z. LeBrun, installation view. Exhibition documentation by Robert Szkolnicki."
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="assets/PA110184%20PanoramaA.jpg?v=1733861589877"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="<i>The body is a score</i> (2024) by Z. LeBrun, installation view. Exhibition documentation by Robert Szkolnicki."
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="assets/PB081803ra.jpg?v=1733861748288"
+            style="width: 100%"
+            onclick="currentSlide(5)"
+            alt="<i>The body is a score</i> (2024) by Z. LeBrun, installation view. Exhibition documentation by Robert Szkolnicki."
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="assets/SDIM0106r%20PanoramaA.jpg?v=1733861795423"
+            style="width: 100%"
+            onclick="currentSlide(6)"
+            alt="<i>The body is a score</i> (2024) by Z. LeBrun, video still. Exhibition documentation by Robert Szkolnicki."
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="assets/PA301699%20PanoramaA.jpg?v=1733861711771"
+            style="width: 100%"
+            onclick="currentSlide(7)"
+            alt="<i>The body is a score</i> (2024) by Z. LeBrun, installation view. Exhibition documentation by Robert Szkolnicki."
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="assets/PB081818ra.jpg?v=1733861771837"
+            style="width: 100%"
+            onclick="currentSlide(8)"
+            alt="<i>The body is a score</i> (2024) by Z. LeBrun, video still. Exhibition documentation by Robert Szkolnicki."
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="assets/SDIM0121r%20PanoramaA.jpg?v=1733861809709"
+            style="width: 100%"
+            onclick="currentSlide(9)"
+            alt="<i>The body is a score</i> (2024) by Z. LeBrun, installation view. Exhibition documentation by Robert Szkolnicki."
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="assets/PB081817ra.jpg?v=1733861763390"
+            style="width: 100%"
+            onclick="currentSlide(10)"
+            alt="<i>The body is a score</i> (2024) by Z. LeBrun, video still. Exhibition documentation by Robert Szkolnicki."
+          />
+        </div>
+      </div>
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+      </script>
+
+      <h3 style="margin-left: 20px; margin-right: 20px">
+        <b>
+          <i>The body is a score</i> <br />
+          Multichannel sound and video installation <br />
+          October 11 - November 22, 2024 <br />
+        </b>
+      </h3>
+
+      <p style="margin-left: 20px; margin-right: 20px">
+        Curated by send + receive festival of sound v.26 <br />
+        Hosted at Poolside Gallery, Video Pool Media Arts Centre <br /><br />
+
+        Exhibition Documentation by
+        <a href="https://www.facebook.com/robert.szkolnicki"
+          ><span style="color: red"> Robert Szkolnicki</span></a
+        >.
+      </p>
+
+      <br /><br />
+      <hr />
+      <br />
+
+      <p style="margin-left: 20px; margin-right: 20px">
+        <i
+          >“a score is a body… <br />
+          a lake is a body…<br />
+          text is a body….<br />
+          a breath is a body…”</i
+        >
+        <br /><br />
+
+        Sometimes I don’t think it’s possible to go a single day without
+        thinking about somatic death. But lately I’ve been trying to be more
+        hopeful. I guess I’m just tired of fearing my own body and how it will
+        fail me one day.
+        <br /><br />
+        To combat this I’ve taken to thinking about everything as a body –
+        applying life and subjecthood to everything that breathes and
+        experiences change on both cellular and metaphorical levels. If
+        everything is a body, then everything is relational and my own body
+        doesn’t exist in a vacuum. Rather, it is connected to the universe
+        around me by a thousand glowing threads which are just temporarily
+        jutting out of the warp and weft of its fabric. I’m just in a slightly
+        more solid form for a little while, running until the sound stops.
+        <br /><br />
+        The sound is how I know I’m alive. It’s how I ground myself in a reality
+        that is constantly trying to escape my perception. An air conditioner
+        running in the background, cars passing by on the street, the sound of
+        skin on skin – these invisible caresses remind me that I’m (real)ly
+        here.
+        <br /><br />People always seem to forget that sound is touch. When I
+        hear your voice, I feel it.
+      </p>
+
+      <br /><br />
+      <hr />
+      <br />
+
+      <p style="margin-left: 20px; margin-right: 20px">
+        The body is a score is an audio installation that attempts to
+        metaphorize the false dichotomy of objectivity and subjectivity of the
+        human body through language and sound.
+
+        <br /><br />
+
+        Balancing algorithmic composition with improvised rhythms, LeBrun
+        transposes bodies of text from anatomical textbooks, poetry, and
+        personal writings into scores for flute and guitar. These compositions
+        are accompanied by the sounds of the interior body, recorded using a
+        stethoscope microphone, and Solfeggio tones–notes that are said to
+        resonate with the Earth’s frequency.
+
+        <br /><br />
+
+        Connected by breath, these vastly contrasting bodies are brought
+        together with the aim of blurring somatic, textual, and metaphorical
+        boundaries. Together, they speak to the ways in which we construct an
+        understanding of what a body \can be through language, and how we might
+        subvert these restrictive representations by transmuting and expanding
+        upon their forms. What results is the creation of an ever-evolving
+        auditory body that changes over time depending on the presence and
+        position of the listener within the installation.
+
+        <br /><br /><br /><br />
+        <b>
+          Watch video documentation by Robert Szkolnicki embedded in browser
+          below.</b
+        >
+
+        <br /><br /><br /><br /><br />
+      </p>
+    </div>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/IyarXzH_0Vs?si=jc33J7_FgHJg_bS8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/CO8V8fJeBP4?si=n6jxgE6rdF0WWR15"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/3BP86ZBSso8?si=h6MRrBqvnYLIyDKX"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ZuEWGMwzs3o?si=Y5xWaDPAK3lanIQ5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+    
+    <br><br>
+    <div id="footer">
+      <p
+        class="alignleft"
+        style="color: white; padding-left: 8px; padding-top: 3px"
+      >
+        <a href="index.html">Z.LeBrun</a>, &copy; 2025.
+      </p>
+      <p class="alignright"></p>
+      <div class="header">
+        <p style="padding-right: 8px">
+          <a href="bio.html"> Bio</a> /
+          <a
+            href="https://docs.google.com/document/d/1Z6XeCaOc0wKJE3A7naDJdAA8dO4yfyhTGK4ftD4sHW0/edit?usp=sharing"
+            >CV</a
+          >
+          / <a href="portfolio.html">Portfolio</a> /
+          <a href="archive.html"> Archive</a> /
+          <a href="contact-info.html"> Contact </a>
+        </p>
+      </div>
+    </div>
+    
+  </body>
+</html>

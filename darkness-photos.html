@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>darknesses</title>
+  <style>
+      body {
+        background-color: white;
+        font-family: courier new, monospace;
+      }
+      .header {
+        padding: 5px;
+        text-align: right;
+        background: black;
+        color: white;
+        font-size: 15px;
+      }
+      a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create three equal columns that sits next to each other */
+      .column {
+        flex: 25%;
+        max-width: 30%;
+        padding: 0 4px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+      .alignleft {
+        float: left;
+      }
+      .alignright {
+        float: right;
+      }
+      .caption {
+        color: dimgrey;
+        text-align: center;
+        font-size: 13px;
+      }
+    
+div.gallery {
+  border: 1px solid white;
+}
+
+div.gallery:hover {
+  border: 1px solid dimgrey;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 3px;
+  text-align: center;
+  font-size:14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+  <div id="textbox">
+      <p
+        class="alignleft"
+        style="color: white; padding-left: 8px; padding-top: 3px"
+      >
+        <a href="index.html">Z.LeBrun</a>
+      </p>
+
+      <div class="header">
+        <p style="padding-right: 8px">
+          <a href="bio.html"> Bio</a> /
+          <a
+            href="https://docs.google.com/document/d/1Z6XeCaOc0wKJE3A7naDJdAA8dO4yfyhTGK4ftD4sHW0/edit?usp=sharing"
+            >CV</a
+          >
+          / <a href="portfolio.html">Portfolio</a> /
+          <a href="archive.html"> Archive</a> /
+          <a href="contact-info.html"> Contact </a> /
+          <a href="index.html"> *** </a>
+        </p>
+      </div>
+    </div>
+
+    <h1 style="margin-left: 20px; margin-right: 20px">
+      <i>darknesses,</i> ongoing
+    </h1>
+    <br />
+<p style="margin-left: 20px; margin-right: 20px">
+  Zoë LeBrun <br>
+  digital photograph series<br>
+  2020-present<br><br><br>
+  Roland Barthes has claimed that the photograph is invisible; that it’s impossible to separate its signs from the signed. Photography has also been considered ‘objective’ due to its documentary nature. My <i>darknesses</i> pose the question: how do these ideas change if you can take a photo of nothing, only for something to emerge from it?
+<br><br><br> click to enlarge photographs
+  </p>
+
+  
+  <!-- portrait row -->
+  
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/darkness-tower_2020.jpg?v=1704259436022">
+      <img src="assets/darkness-tower_2020.jpg?v=1704259436022" alt="darkness (tower), digital photograph, 2020" width="600" height="400">
+    </a>
+    <div class="desc"><i>darkness (tower),</i> 2020</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/darkness-self-portrait_2021.jpg?v=1704259440307">
+      <img src="assets/darkness-self-portrait_2021.jpg?v=1704259440307" alt="darkness (self-portrait), digital photograph, 2021" width="600" height="400">
+    </a>
+    <div class="desc"><i>darkness (self-portrait),</i> 2021</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/darkness-trees_2021.JPEG?v=1704259422616">
+      <img src="assets/darkness-trees_2021.JPEG?v=1704259422616" alt="darkness (trees), digital photograph, 2021" width="600" height="400">
+    </a>
+    <div class="desc"><i>darkness (trees),</i> 2021</div>
+  </div>
+</div>
+
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/darkness-warm-abstract_2021.JPEG?v=1704259432761">
+      <img src="assets/darkness-warm-abstract_2021.JPEG?v=1704259432761" alt="darkness (warm abstract), digital photograph, 2021" width="600" height="400">
+    </a>
+    <div class="desc"><i>darkness (warm abstract),</i> 2021</div>
+  </div>
+</div>
+
+  
+  <!-- landscape row -->
+  
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/darkness-moon.JPEG?v=1704259418233">
+      <img src="assets/darkness-moon.JPEG?v=1704259418233" alt="darkness (moon), digital photograph, 2020" width="600" height="400">
+    </a>
+    <div class="desc"><i>darkness (moon),</i> 2020</div>
+  </div>
+</div>
+  
+  
+  <!-- portrait row -->
+  
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/darkness-bedroom-window-02_2023.jpg?v=1704259407281">
+      <img src="assets/darkness-bedroom-window-02_2023.jpg?v=1704259407281" alt="darkness (bedroom window 02), digital photograph, 2023" width="600" height="400">
+    </a>
+    <div class="desc"><i>darkness (bedroom window 02),</i> 2023</div>
+  </div>
+</div>
+  
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/darkness-cables_2021.JPEG?v=1704259426515">
+      <img src="assets/darkness-cables_2021.JPEG?v=1704259426515" alt="darkness (cables), digital photograph, 2021" width="600" height="400">
+    </a>
+    <div class="desc"><i>darkness (cables),</i> 2021</div>
+  </div>
+</div>
+  
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/darkness-vault_2022.jpg?v=1704259407373">
+      <img src="assets/darkness-vault_2022.jpg?v=1704259407373" alt="darkness (vault), digital photograph, 2022" width="600" height="400">
+    </a>
+    <div class="desc"><i>darkness (vault),</i> 2022</div>
+  </div>
+</div>
+  
+  
+  <!-- portrait row -->
+ 
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/darkness-blue-abstract-night-sky_2023.jpg?v=1704259410292">
+      <img src="assets/darkness-blue-abstract-night-sky_2023.jpg?v=1704259410292" alt="darkness (blue abstract), digital photograph, 2023" width="600" height="400">
+    </a>
+    <div class="desc"><i>darkness (blue abstract),</i> 2023</div>
+  </div>
+</div>
+  
+  
+  
+<!-- landscape row -->
+  
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/darkness-clock_2020.JPEG?v=1704259414020">
+      <img src="assets/darkness-clock_2020.JPEG?v=1704259414020" alt="darkness (clock 01), digital photograph, 2020" width="600" height="400">
+    </a>
+    <div class="desc"><i>darkness (clock 01),</i> 2020</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<br><br><br>
+
+</body>
+</html>
+
+
