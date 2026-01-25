@@ -1,1 +1,1 @@
-All content by Zoë LeBrun. Copyright 2025.
+All content by Zoë LeBrun. Copyright 2020-2026.
